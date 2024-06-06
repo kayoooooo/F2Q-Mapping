@@ -5,7 +5,6 @@ public class TreeNode {
     private TreeNode xChild;
     private TreeNode yChild;
     private TreeNode zChild;
-
     // default constructor
     public TreeNode()
     {
@@ -100,5 +99,4 @@ public class TreeNode {
         }
         return removed;
     }
-
 }
