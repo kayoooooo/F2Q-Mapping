@@ -4,5 +4,4 @@ public class TreeNode {
     private TreeNode xChild;
     private TreeNode yChild;
     private TreeNode zChild;
-    
 }
