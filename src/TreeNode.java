@@ -2,9 +2,9 @@ public class TreeNode {
 
     private int qubit;
     private TreeNode parent;
-    private TreeNode xChild;
-    private TreeNode yChild;
-    private TreeNode zChild;
+    public TreeNode xChild;
+    public TreeNode yChild;
+    public TreeNode zChild;
     // default constructor
     public TreeNode()
     {
@@ -79,6 +79,10 @@ public class TreeNode {
     /* ============
     * MISC.
     ============ */
+
+    public boolean isLeaf() {
+        return (xChild == null && yChild == null && zChild == null);
+    }
     public TreeNode removeChild(char option) {
         TreeNode removed = null;
         switch (option) {
