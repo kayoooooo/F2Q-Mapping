@@ -19,7 +19,7 @@ public class TreeFromHam {
             }
         }
         queue.addAll(Arrays.asList(list));
-
+        this.makeTree();
     }
 
     public void makeTree() {
@@ -42,7 +42,6 @@ public class TreeFromHam {
             queue.add(new Entry(newKey, intNode));
         }
     }
-
 
     public void setX(TreeNode node, int qubit) {
         if (node.isLeaf()) {
@@ -72,6 +71,10 @@ public class TreeFromHam {
         setZ(node.xChild, qubit);
         setZ(node.yChild, qubit);
         setZ(node.zChild, qubit);
+    }
+
+    public void displayMapping() {
+
     }
 }
 
