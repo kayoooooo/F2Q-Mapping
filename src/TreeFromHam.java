@@ -52,7 +52,7 @@ public class TreeFromHam {
             Entry XChild = queue.poll();
             Entry YChild = queue.poll();
             Entry ZChild = queue.poll();
-            int newKey = Math.max(XChild.key, Math.max(YChild.key, ZChild.key));
+            int newKey = Math.min(XChild.key, Math.max(YChild.key, ZChild.key));
             TreeNode intNode = new TreeNode();
 
             XChild.value.setParent(intNode);
