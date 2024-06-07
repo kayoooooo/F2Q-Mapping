@@ -23,6 +23,28 @@ public class TreeFromHam {
         }
         queue.addAll(Arrays.asList(list));
         this.makeTree();
+
+        // check for vac state, swap with the symplectic vector
+        // at the last index of our array of vectors
+        String pauliStr = "";
+        SimplecticVector svec;
+        for (int i = 0; i < mapping.length; i++) {
+            svec = mapping[i];
+            pauliStr = svec.getPauliString();
+            boolean found = true;
+            for (char pauliMat : pauliStr.toCharArray()) {
+                if (pauliMat != 'Z' && pauliMat != 'I') {
+                    found = false;
+                    break;
+                }
+            }
+            if (found) {
+                SimplecticVector temp = mapping[mapping.length - 1];
+                mapping[mapping.length - 1] = svec;
+                mapping[i] = temp;
+                break;
+            }
+        }
     }
 
     public void makeTree() {
