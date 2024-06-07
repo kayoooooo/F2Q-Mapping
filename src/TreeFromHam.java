@@ -18,7 +18,7 @@ public class TreeFromHam {
         }
         for (Set<Integer> term : hamiltonian) {
             for (Integer operator : term) {
-                list[operator].key++;
+                list[operator].key--;
             }
         }
         queue.addAll(Arrays.asList(list));
