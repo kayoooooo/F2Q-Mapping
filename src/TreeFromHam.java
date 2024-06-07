@@ -74,7 +74,13 @@ public class TreeFromHam {
     }
 
     public void displayMapping() {
-
+        for (int i = 0; i < size * 2 + 1; i++) {
+            String display = "Fermionic mode ";
+            display = display.concat(Integer.toString(i));
+            display = display.concat(": ");
+            System.out.print(display);
+            System.out.print(mapping[i].getPauliString());
+        }
     }
 }
 

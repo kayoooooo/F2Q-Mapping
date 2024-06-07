@@ -49,4 +49,23 @@ public class SimplecticVector {
         }
         return weight;
     }
+
+    public String getPauliString() {
+        String pauli = "";
+        for (int i = 0; i < size; i++) {
+            if (Xvec[i] == 1 && Zvec[i] == 1) {
+                pauli = pauli.concat("Y");
+            }
+            else if (Xvec[i] == 1) {
+                pauli = pauli.concat("X");
+            }
+            else if (Zvec[i] == 1) {
+                pauli = pauli.concat("Z");
+            }
+            else {
+                pauli = pauli.concat("I");
+            }
+        }
+        return pauli;
+    }
 }
