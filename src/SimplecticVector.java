@@ -31,9 +31,9 @@ public class SimplecticVector {
         Xvec[i] = 1;
     }
 
-    public SimplecticVector add(SimplecticVector v1, SimplecticVector v2) {
+    public static SimplecticVector add(SimplecticVector v1, SimplecticVector v2) {
         SimplecticVector sum = new SimplecticVector(v1.size);
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < v1.size; i++) {
             sum.Xvec[i] = (v1.Xvec[i] + v2.Xvec[i]) % 2;
             sum.Zvec[i] = (v1.Zvec[i] + v2.Zvec[i]) % 2;
         }

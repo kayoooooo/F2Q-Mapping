@@ -5,13 +5,16 @@ public class TreeFromHam {
     Queue<Entry> queue;
 
     SimplecticVector[] mapping;
+    Set<Set<Integer>> hamiltonian;
     public TreeFromHam(int size, Set<Set<Integer>> hamiltonian){   //this should be number of qubits
         this.size = size;
+        this.hamiltonian = hamiltonian;
         queue = new PriorityQueue<>(Comparator.comparingInt(a -> a.key));
         mapping = new SimplecticVector[size * 2 + 1];
         Entry[] list = new Entry[size * 2 + 1];
         for (int i = 0; i < list.length; i++) {
             list[i] = new Entry(0, new TreeNode(i));
+            mapping[i] = new SimplecticVector(size);
         }
         for (Set<Integer> term : hamiltonian) {
             for (Integer operator : term) {
@@ -23,7 +26,7 @@ public class TreeFromHam {
     }
 
     public void makeTree() {
-        for (int i = size - 1; i >= 0; i++) {
+        for (int i = size - 1; i >= 0; i--) {
             Entry XChild = queue.poll();
             Entry YChild = queue.poll();
             Entry ZChild = queue.poll();
@@ -77,10 +80,25 @@ public class TreeFromHam {
         for (int i = 0; i < size * 2 + 1; i++) {
             String display = "Fermionic mode ";
             display = display.concat(Integer.toString(i));
+            if (i == size * 2) {
+                display = display.concat(" (vac operator)");
+            }
             display = display.concat(": ");
             System.out.print(display);
-            System.out.print(mapping[i].getPauliString());
+            System.out.println(mapping[i].getPauliString());
         }
+    }
+
+    public int getWeight() {
+        for (Set<Integer> term : hamiltonian) {
+            SimplecticVector vac = new SimplecticVector(size);
+            for (Integer operator : term) {
+                vac = SimplecticVector.add(vac, mapping[operator]);
+            }
+
+            System.out.println(Integer.toString(vac.getWeight()));
+        }
+        return 0;
     }
 }
 

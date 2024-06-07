@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="543b9696-605c-4fdb-aa58-74ca2d520fce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/F2Q-Mapping.iml" beforeDir="false" afterPath="$PROJECT_DIR$/F2Q-Mapping.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/F2QTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/F2QTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SimplecticVector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimplecticVector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TreeFromHam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeFromHam.java" afterDir="false" />
     </list>
@@ -52,6 +53,23 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="F2QTest.firstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="F2Q-Mapping" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="F2QTest" />
+      <option name="METHOD_NAME" value="firstTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.F2QTest.firstTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -73,5 +91,19 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/F2QTest.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/F2Q_Mapping$Main.ic" NAME="Main Coverage Results" MODIFIED="1717773317294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
