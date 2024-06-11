@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="543b9696-605c-4fdb-aa58-74ca2d520fce" name="Changes" comment="" />
+    <list default="true" id="543b9696-605c-4fdb-aa58-74ca2d520fce" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/F2Q-Mapping/Entry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/F2Q-Mapping/Entry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/F2Q-Mapping/F2QTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/F2Q-Mapping/F2QTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/F2Q-Mapping/TreeFromHam.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/F2Q-Mapping/TreeFromHam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/F2QTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/F2QTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TreeFromHam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeFromHam.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,6 +100,11 @@
           <url>file://$PROJECT_DIR$/src/F2QTest.java</url>
           <line>16</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/F2QTest.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

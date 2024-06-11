@@ -112,15 +112,17 @@ public class TreeFromHam {
     }
 
     public int getWeight() {
+        int total = 0;
         for (Set<Integer> term : hamiltonian) {
             SimplecticVector vac = new SimplecticVector(size);
             for (Integer operator : term) {
                 vac = SimplecticVector.add(vac, mapping[operator]);
             }
-
+            total += vac.getWeight();
             System.out.println(Integer.toString(vac.getWeight()));
         }
-        return 0;
+        System.out.println(Integer.toString(total));
+        return total;
     }
 }
 
